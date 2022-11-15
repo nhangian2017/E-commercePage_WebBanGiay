@@ -1,0 +1,1319 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all 0.1s linear;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --blue: #313866;
+    --pink: #F83292;
+    --violet: #803F95;
+    --lightviolet: #DDB9DA;
+    --yellow: #E6E044;
+    --black: #1E272D;
+    --grey: #737373;
+}
+
+*::selection {
+    background: var(--lightviolet);
+    color: #fff;
+}
+
+*>img {
+    user-select: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* =============================================================Bắt đầu phần Hero */
+section {
+    margin-bottom: 10rem;
+    padding: 0 10rem;
+}
+
+section.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13rem;
+    background-image: url(../images/HOME/HeroBackground.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 100%;
+}
+
+section.hero .hero-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/HOME/ImageBack.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 110%;
+    position: relative;
+    z-index: 2;
+}
+
+section.hero .hero-image img {
+    width: 37vw;
+}
+
+section.hero .hero-slogan {
+    width: 50%;
+    padding-right: 6rem;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-slogan h1 {
+    width: 100%;
+    font-size: 5.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--blue);
+    white-space: nowrap;
+    margin: 0;
+}
+
+.hero-slogan span {
+    font-size: 5.5rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: var(--violet);
+}
+
+.hero-slogan p {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--black);
+}
+
+.hero-slogan .button {
+    display: flex;
+    align-items: center;
+    margin: 1.6rem auto;
+}
+
+.hero-slogan .button a {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.hero-slogan .button .buy {
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 1.8rem;
+}
+
+.hero-slogan .button .buy ion-icon {
+    font-size: 2.3rem;
+    padding-right: 0.5rem;
+}
+
+.hero-slogan .button .buy:hover {
+    background-color: var(--blue);
+    color: #fff;
+    transform: scale(0.95);
+}
+
+.hero-slogan .button .shopping ion-icon {
+    font-size: 2.3rem;
+    padding-right: 0.5rem;
+}
+
+.hero-slogan .button .shopping {
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 1.8rem;
+}
+
+.hero-slogan .button .shopping ion-icon {
+    font-size: 2.3rem;
+    padding-left: 0.5rem;
+}
+
+.hero-slogan .button .shopping:hover {
+    transform: scale(0.95);
+}
+
+/* =============================================================Kết thúc phần Hero */
+/* =============================================================Bắt đầu phần Label */
+section.label .label-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(238, 238, 238, 0.5);
+    gap: 1rem;
+    padding: 5rem 2rem;
+    flex-wrap: wrap;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    
+}
+
+section.label .label-box img {
+    height: 10rem;
+}
+/* =============================================================Kết thúc phần Label */
+/* =============================================================Bắt đầu phần Banner */
+section.image{
+    height: 80vh;
+    background-image: url("../images/HOME/Background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+    padding: 0;
+    
+}
+
+section.image .opacity{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}
+
+section.image img{
+    position: absolute;
+    width: 40%;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+}
+
+section.image .desc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+    z-index: 2;
+    gap: 3rem;
+}
+
+section.image .desc h1{
+    font-size: 5rem;
+    text-shadow: 0px 0px 20px 1px rgba(228,228,102,0.9);
+    text-shadow:
+          0 0 10px rgba(228, 228, 102, .7),
+          0 0 40px rgba(228, 228, 102, .7),
+          0 0 200px rgba(228, 228, 102, .7);
+    color: #E4E466;
+    font-family: 'Paytone One', sans-serif;
+}
+
+section.image .desc p{
+    width: 90%;
+    font-size: 1.6rem;
+    color: #ffffffb3;
+    line-height: 2.5rem;
+    font-weight: 400;
+    text-shadow:
+          0 0 10px rgba(255, 255, 255, .3),
+          0 0 40px rgba(255, 255, 255, .3),
+          0 0 100px rgba(255, 255, 255, .3);
+}
+
+section.image .desc .discover{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #E4E466;
+    padding: 1rem 1.5rem;
+    border: 2px solid #E4E466;
+    width: fit-content;
+    border-radius: 0.5rem;
+    /* box-shadow: 0px 0px 20px 0.5px rgba(228,228,102,0.9); */
+    box-shadow:
+    0 0 5px rgba(228, 228, 102, .7),
+    0 0 20px rgba(228, 228, 102, .7),
+    0 0 200px rgba(228, 228, 102, .7);
+    cursor: pointer;
+}
+
+section.image .desc .discover:hover{
+    background-color: #E4E466;
+    color: var(--black);
+}
+
+/* =============================================================Kết thúc phần Banner */
+/* =============================================================Bắt đầu phần Service */
+section.service {
+    padding: 0rem 10rem;
+}
+
+section.service .container {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.service .container .box {
+    width: 27rem;
+    min-width: 27rem;
+    transition: 1s;
+    flex-shrink: 0;
+    background-color: rgba(238, 238, 238, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service .container .box .image {
+    margin: 1rem;
+    border-radius: 1.2rem;
+    object-fit: cover;
+}
+
+.service .container img {
+    width: 100%;
+}
+
+.service .container .desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.service .container h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.service .box span {
+    font-size: 1.6rem;
+    color: var(--grey);
+    text-align: center;
+}
+
+.service .box h2 span {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    background-color:var(--black);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* =============================================================Kết thúc phần Service */
+/* =============================================================Bắt đầu phần Feature & Newest*/
+section.feature,
+section.newest {
+    padding: 10rem 5rem;
+    background-image: linear-gradient(90deg, #1E272D, #313866);
+    margin-bottom: 0;
+}
+
+section.newest{
+    margin-bottom: 10rem;
+}
+
+section.feature .heading,
+section.newest .heading {
+    margin-top: -5rem;
+    color: #fff;
+}
+
+section.feature .feature-slider,
+section.newest .newest-slider{
+    display: flex;
+    justify-content:center;
+    gap: 1rem;
+}
+
+section.feature .slick-initialized .slick-slide,
+section.newest .slick-initialized .slick-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.feature .box,
+section.newest .box {
+    width: 29rem;
+    height: 37rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color:#fff;
+}
+
+section.feature .box .card-image,
+section.newest .box .card-image {
+    padding: 1rem;
+    margin: 3rem 0;
+    position: relative;
+}
+
+section.feature .box .card-image .new,
+section.feature .box .card-image .discount,
+section.newest .box .card-image .new,
+section.newest .box .card-image .discount{
+    width: fit-content;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    
+}
+
+.box .card-image .new{
+    background-color: #D41E25;
+}
+
+.box .card-image .discount{
+    background-color:#009944;
+}
+section.feature .box .card-image .tags,
+section.newest .box .card-image .tags{
+    display: flex;
+    flex-direction:column;
+    gap: 0.5rem;
+    position: absolute;
+    top: -3.5rem;
+    left: -0.5rem;
+}
+
+section.feature .box img,
+section.newest .box img {
+    width: 100%;
+    transform-origin: bottom left;
+}
+
+section.feature .box span,
+section.newest .box span  {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--pink);
+    text-align: center;
+}
+
+section.feature  .details-unhidden, 
+section.newest  .details-unhidden{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateY(5rem);
+    gap: 0.5rem;
+}
+
+section.feature  .details-unhidden h2,
+section.newest  .details-unhidden h2 {
+    text-align: left !important;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--black);
+}
+section.feature  .details-unhidden h3.brandName,
+section.newest  .details-unhidden h3.brandName {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--grey);
+}
+
+section.feature  .details-unhidden .price,
+section.newest  .details-unhidden .price {
+    width: 100%;
+    display: flex;
+    align-items:baseline;
+    gap: 1rem;
+}
+
+section.feature  .details-unhidden .price h2,
+section.newest  .details-unhidden .price h2{
+    color: #FF4824;
+    font-size: 2rem;
+}
+
+section.feature  .details-unhidden .price h3,
+section.newest  .details-unhidden .price h3{
+    color: var(--grey);
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+section.feature  .details-hidden , 
+section.newest  .details-hidden{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transform: translateY(15rem);
+}
+
+section.feature  .details-hidden .addcart ,
+section.newest  .details-hidden .addcart{
+    width: 70%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid var(--blue);
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+section.feature  .details-hidden .addcart h3,
+section.newest  .details-hidden .addcart h3 {
+    color: var(--blue);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+section.feature  .details-hidden .addcart:hover,
+section.newest  .details-hidden .addcart:hover {
+    transform: scale(0.95);
+    background-color: var(--blue);
+}
+
+section.feature  .details-hidden .addcart:hover h3,
+section.newest  .details-hidden .addcart:hover h3 {
+    color: #fff;
+}
+
+section.feature  .card-details, 
+section.newest  .card-details{
+    transform: translateY(-4rem);
+    transition: 0.2s linear;
+}
+
+section.feature  .box:hover img,
+section.newest  .box:hover img {
+    transform: rotate(-25deg);
+}
+
+section.feature .box:hover .details-unhidden,
+section.newest .box:hover .details-unhidden {
+    transform: translateY(-2rem);
+}
+
+section.feature .box:hover .details-hidden,
+section.newest .box:hover .details-hidden {
+    transform: translateY(-1rem);
+}
+
+.slick-initialized .slick-slide {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.slick-arrow {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: var(--lightviolet);
+    border: none;
+    cursor: pointer;
+}
+
+.slick-arrow:hover {
+    background-color: var(--blue);
+}
+
+.slick-prev {
+    left: -1rem;
+}
+
+.slick-next {
+    right: -1rem;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 4rem;
+    height: 1.5rem;
+    border-radius: 2.5rem;
+    border: none;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.slick-dots .slick-active button {
+    background-color: var(--lightviolet);
+}
+/* =============================================================Kết thúc phần Feature & Newest*/
+/* =============================================================Bắt đầu phần Sale-off*/
+section.sale-off {
+    height: 80vh;
+    background-image: url("../images/HOME/SaleOff_Background.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 0;
+}
+
+section.sale-off .opacity{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}
+
+section.sale-off .container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content:center;
+    align-items: center;
+}
+
+section.sale-off .container h1{
+    font-size: 5rem;
+    color: #fff;
+    text-align: center;
+}
+
+section.sale-off .container h1 span{
+    font-size: 5rem;
+    text-shadow: rgb(228 228 102 / 70%) 0px 0px 10px, rgb(228 228 102 / 70%) 0px 0px 40px, rgb(228 228 102 / 70%) 0px 0px 200px;
+    color: rgb(228, 228, 102);
+}
+
+section.sale-off .container h2{
+    font-size: 3.5rem;
+    color: #eee;
+    text-align: center;
+}
+
+section.sale-off .container .shop-now{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #E4E466;
+    padding: 1rem 1.5rem;
+    border: 2px solid #E4E466;
+    width: fit-content;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgb(228 228 102 / 70%), 0 0 20px rgb(228 228 102 / 70%), 0 0 200px rgb(228 228 102 / 70%);
+    cursor: pointer;
+}
+
+section.sale-off .container .shop-now:hover{
+    background-color: #E4E466;
+    color: var(--black);
+}
+
+section.sale-off .container ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section.sale-off .container ul li{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+section.sale-off .container ul li .box{
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+section.sale-off .container ul li .box span{
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+section.sale-off .container ul li h3{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+section.sale-off .container ul .double-dot{
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 600;
+}
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-4rem) scale(0);
+        opacity: 0;
+    }
+}
+/* =============================================================Kết thúc phần Sale-off*/
+/* =============================================================Bắt đầu phần Newsletter*/
+section.newsletter{
+    height: 60vh;
+    padding: 2rem 7rem;
+}
+
+section.newsletter .container{
+    height: 100%;
+    border-radius: 5rem;
+    overflow: hidden;
+    background-image: url("../images/HOME/Bubble.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+} 
+
+section.newsletter .container .opacity{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #313866ea;
+    z-index: 0;
+}
+
+
+section.newsletter .wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+}
+
+section.newsletter .left-wrapper{
+    width: 50%;
+    padding: 5rem;
+}
+
+section.newsletter .left-wrapper h1{
+    text-align: left;
+    color: #fff;
+    text-shadow:
+          0 0 5px rgba(255, 255, 255, .5),
+          0 0 15px rgba(255, 255, 255, .5),
+          0 0 250px rgba(255, 255, 255, .5);
+}
+section.newsletter .left-wrapper p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color:rgba(255, 255, 255, 0.7);
+}
+
+section.newsletter .right-wrapper{
+    width: 50%;
+    padding: 3rem;
+}
+section.newsletter .right-wrapper .input{
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 5rem;
+    background-color: #fff;
+    box-shadow:
+          0 0 5px rgba(255, 255, 255, .7),
+          0 0 15px rgba(255, 255, 255, .7),
+          0 0 250px rgba(255, 255, 255, .7);
+}
+section.newsletter .right-wrapper input{
+    flex-grow: 1;
+    font-size: 1.6rem;
+    background-color: transparent;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+section.newsletter .right-wrapper button{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.5rem 3rem;
+    border-radius: 5rem;
+    background-color: var(--blue);
+    color: #fff;
+    cursor: pointer;
+}
+
+section.newsletter .right-wrapper button:hover{
+    transform: scale(0.95);
+}
+
+/* =============================================================Kết thúc phần Newsletter*/
+/* =============================================================Bắt đầu phần Review*/
+section.review{
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    background-color:#EEEEEE;
+}
+
+section.review h1{
+    margin-top: 0;
+}
+section.review .review-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.review .review-slider .swiper-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+section.review .review-slider .slide {
+    height: 70vh;
+    padding: 2rem;
+    position: relative;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 !important;
+}
+
+
+section.review .review-slider .user{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+    background: #fff;
+    padding: 5rem 2rem;
+}
+
+.review .review-slider .slide .fa-quote-right {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 8rem;
+    color: var(--lightviolet);
+}
+
+.review .review-slider .slide .user img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 12rem;
+    width: 12rem;
+    margin: 2rem 0;
+    border: 5px solid #fff;
+    position: absolute;
+    top: -1rem;
+    
+}
+
+.review .review-slider .slide .user h3 {
+    color: var(--blue);
+    font-size: 2rem;
+}
+
+.review .review-slider .slide .user .stars i {
+    color: var(--lightviolet);
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+.review .review-slider .slide .user .comment {
+    flex-grow: 1;
+    color: var(--grey);
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    text-align: justify;
+    font-style: italic;
+}
+
+/* =============================================================Kết thúc phần Review*/
+#particles-js {
+    position: relative;
+    z-index: -5;
+    width: 100%;
+}
+
+canvas {
+    display: block;
+    position: fixed;
+    z-index: -100;
+}
+
+/* ============================================================= Custom Cursor */
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--lightviolet);
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid var(--lightviolet);
+}
+
+/* ============================================================= Bắt đầu phần Dark Mode */
+
+.heading.dark {
+    color: #fff;
+    text-shadow:
+          0 0 5px rgba(255, 255, 255, .5),
+          0 0 15px rgba(255, 255, 255, .5),
+          0 0 250px rgba(255, 255, 255, .5);
+}
+
+header.dark {
+    background-image: linear-gradient( to right, #1E272D, #1E272D);
+}
+
+footer.dark {
+    background: none;
+}
+
+.boxfoot h2.dark,
+.hero-slogan span.dark {
+    color: #fff;
+}
+
+section.hero.dark {
+    background-image: none;
+}
+
+.hero-slogan h1.dark,
+.service .container h2.dark,
+.details-hidden label.dark,
+.details-unhidden h2.dark {
+    color: var(--lightviolet);
+}
+
+.hero-slogan p.dark,
+.service .container span.dark,
+.feature .box span.dark,
+.feature .box li.dark,
+.boxfoot li.dark,
+.boxfoot li a.dark {
+    color: #C2C3CA;
+}
+
+.hero-slogan .button .buy.dark {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.hero-slogan .button .buy.dark:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.label-container.dark {
+    background-color: #F1F1F1 !important;
+}
+
+.service .container .box.dark {
+    background-color: #192025e5;
+    border: 2px solid #192025e5;
+}
+
+.service .container .box .image.dark {
+    background-color: #1E272D;
+}
+
+section.feature.dark {
+    background-color: #192025e5;
+}
+
+section.review .box-container .box.dark {
+    background-color: #F1F1F1;
+}
+
+.footer-logo.dark {
+    background-color: #1E272D;
+}
+
+section.feature .swiper-slide-active.dark {
+    border: 2px solid var(--lightviolet);
+}
+
+.brands-menu.dark {
+    background-color: #1E272D;
+}
+
+section.review.dark{
+    background-color: transparent;
+}
+
+section.feature.dark, section.newest.dark{
+    background-image: none;
+}
+
+/* ============================================================= Kết thúc phần Dark Mode */
+
+/* ============================================================= Responsive */
+@media screen and (max-width: 1200px) {
+    
+    html{
+        font-size: 57%;
+    }
+
+    section.hero .hero-slogan h1{
+        font-size: 5rem;
+    }
+
+    section.hero .hero-slogan h1 span{
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+    html{
+        font-size: 50%;
+    }
+    
+    section.hero .hero-slogan h1{
+        font-size: 4.5rem;
+    }
+
+    section.hero .hero-slogan h1 span{
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header #menu-bar {
+        display: block;
+        font-size: 3rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    header {
+        position: relative;
+    }
+    .header-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-image: linear-gradient(90deg, #1E272D, #313866);
+        height: 0;
+        overflow: hidden;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .header-menu ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    .header-menu>ul>li {
+        font-size: 2rem;
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+   
+    .brands-dropdown span {
+        font-size: 2rem;
+        margin-left: 0;
+        color: #fff;
+        text-align: center;
+    }
+    .brands-menu {
+        position: static;
+    }
+    .header-button {
+        display: none;
+    }
+    .fa-times {
+        transform: rotate(-180deg);
+    }
+
+    section.hero {
+        flex-direction: column-reverse;
+       gap: 5rem;
+    }
+
+    section.hero .hero-image{
+       
+        width: 100%;
+        background-size: 100%;
+        background-position: center;
+    }
+    section.hero .hero-image img {
+        width: 100%;
+    }
+    section.hero .hero-slogan {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    section.hero .hero-slogan h1,
+    section.hero .hero-slogan h1 span{
+        font-size: 6rem;
+    }
+
+    section.hero .hero-slogan p{
+        font-size: 2.4rem;
+    }
+
+    section.hero .button{
+        width: 100%;
+    }
+
+    section.newsletter .wrapper{
+        flex-direction: column;
+    }
+
+    section.newsletter .right-wrapper,
+    section.newsletter .left-wrapper
+     {
+        width: 100%;
+    }
+
+    footer .container .boxfoot{
+        margin: 0;
+    }
+
+    footer .boxfoot .social,
+    footer .boxfoot .payment,
+    footer .boxfoot .app{
+        margin-bottom: 4rem;
+    }
+    footer .container{
+        flex-direction: column;
+        gap: 4rem;
+    }
+     
+    section.sale-off .container ul li .box{
+        width: 11rem;
+        height: 11rem;
+        
+    }
+
+    section.sale-off .container{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+
+@media screen and (max-width: 576px)
+{
+    section{
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+    }
+    section.hero .hero-slogan h1,
+    section.hero .hero-slogan h1 span{
+        font-size: 5rem;
+    }
+
+    section.hero .hero-slogan p{
+        font-size: 1.8rem;
+    }
+
+    section.image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section.image img{
+        position: static;
+        transform: translateX(0%);
+    }
+
+    section.image .desc{
+        width: 100%;
+        position:static;
+        transform: translateX(0%);
+    }
+    section.sale-off .container ul li .box{
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    section.hero .hero-slogan h1,
+    section.hero .hero-slogan h1 span{
+        font-size: 4rem;
+    }
+
+    section.newsletter{
+        padding: 0 !important;
+    }
+
+    section.newsletter .container{
+        border-radius: 0;
+    }
+
+    section.newsletter .right-wrapper, section.newsletter .left-wrapper{
+        padding: 2.5rem;
+    }
+
+    section.sale-off .container ul li .box{
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    section.hero {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+   
+    section.sale-off .container ul li .box{
+        width: 6rem;
+        height: 6rem;
+    }
+}

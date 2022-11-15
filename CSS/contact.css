@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Baloo+Bhaijaan+2:wght@400;500;600&family=Comfortaa:wght@500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Dongle:wght@300;400;700&family=Francois+One&family=Fredoka+One&family=Noto+Sans:ital,wght@1,700&family=Pacifico&family=Poppins:wght@400;500;600;700&family=Rowdies:wght@300;400;700&family=Rubik+Wet+Paint&family=Secular+One&family=Staatliches&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all 0.2s linear;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --blue: #313866;
+    --pink: #F83292;
+    --violet: #803F95;
+    --lightviolet: #DDB9DA;
+    --yellow: #E6E044;
+    --black: #1E272D;
+    --grey: #737373;
+}
+
+*::selection {
+    background: var(--lightviolet);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+/* =============================================================Custom Scrollbar */
+
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--blue);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--lightviolet);
+    border-radius: 1.2rem;
+}
+
+
+section.map{
+    padding: 3rem;
+    padding-top: 13rem;
+    height: 100vh;
+}
+
+section.main{
+    padding: 5rem 10rem;
+    display: flex;
+    gap: 2rem;
+}
+
+section.main .left-container{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5rem;
+}
+
+section.main h1{
+    margin: 0;
+    text-align: left;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid var(--blue);
+    width: fit-content;
+    font-weight: 500;
+}
+
+section.main .left-container .box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    padding-left: 0;
+    border-bottom: 1px solid #eee;
+}
+
+section.main .left-container .box:last-child{
+    border: none;
+}
+
+section.main .left-container .box h2{
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--blue);
+}
+
+section.main .left-container .box h2 ion-icon{
+    font-size: 2.2rem;
+    color: var(--blue);
+}
+
+section.main .left-container .box p{
+    font-size: 1.6rem;
+    color: var(--grey);
+}
+
+section.main .right-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+section.main .right-container .box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+section.main .right-container .box span{
+    font-size: 1.8rem;
+    color: var(--grey);
+}
+
+section.main .right-container .box input{
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border: 2px solid var(--blue);
+}
+
+section.main .right-container .box textarea{
+    font-size: 1.6rem;
+    border: 2px solid var(--blue);
+}
+
+section.main .right-container button{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.5rem 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+/* ============================================================= Responsive */
+@media screen and (max-width: 1200px) {
+    html{
+        font-size: 57%;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    
+    html{
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.main{
+        flex-direction: column-reverse;
+    }
+    section.main .right-container, 
+    section.main .left-container{
+        width: 100%;
+    }
+}
+

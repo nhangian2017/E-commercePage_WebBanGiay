@@ -1,0 +1,567 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/FAVICON/favicon-32x32.png"
+    />
+    <!-- Font Awesome CDN Link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- AOS CDN Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Slick Slider CDN -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./CSS/about_us.css" />
+    <link rel="stylesheet" href="./CSS/common.css" />
+    <title>About Us</title>
+  </head>
+
+  <body>
+    <!-- ===============================================================Bắt đầu phần Header -->
+    <header class="header">
+      <div class="header-logo">
+        <a href="./home.html"
+          ><span>SN<i class="fa-solid fa-shoe-prints"></i>KERS</span></a
+        >
+      </div>
+      <div class="header-menu">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <div class="brands-dropdown">
+            <span>Brands</span>
+            <div class="brands-menu">
+              <a href="./nike.html" onclick="loading()">NIKE</a>
+              <a href="./jordan.html" onclick="loading()">AIR JORDAN</a>
+              <a href="./adidas.html" onclick="loading()">ADIDAS</a>
+              <a href="./puma.html" onclick="loading()">PUMA</a>
+              <a href="./MLB.html" onclick="loading()">MLB</a>
+            </div>
+          </div>
+          <li><a href="./about_us.html" onclick="loading()">About Us</a></li>
+          <li><a href="./contact.html" onclick="loading()">Contact</a></li>
+        </ul>
+      </div>
+      <div class="header-button">
+        <div class="sign-up"><h2>Đăng ký</h2></div>
+        <div class="log-in"><h2>Đăng nhập</h2></div>
+      </div>
+      <div id="menu-bar" class="fas fa-bars"></div>
+    </header>
+
+    <!--Kết thúc phần Header -->
+
+    <section class="banner">
+      <img src="./images/ABOUT_US/Banner_img1.png" alt="" />
+      <img src="./images/ABOUT_US/Banner_img2.png" alt="" />
+      <div class="slogan">
+        <p>"None of us is as smart as all of us."</p>
+        <div class="author">
+          <span>Ken Blanchard.</span>
+          <div class="image">
+            <img src="./images/ABOUT_US/Ken.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="member">
+      <div class="left-container">
+        <div class="box">
+          <div class="image">
+            <img
+              src="./images/ABOUT_US/Member_imgQuoc.jpg"
+              data-name="Mã Hàn Quốc"
+            />
+          </div>
+          <div class="square"></div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img
+              src="./images/ABOUT_US/Member_imgTruong.jpg"
+              data-name="Nguyễn Phi Trường"
+            />
+          </div>
+          <div class="square"></div>
+        </div>    
+      <div class="right-container">
+        <div class="main-img">
+          <div class="name"><h1>Đinh Trần Anh Quân</h1></div>
+          <img src="./images/ABOUT_US/Member_imgQuan.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="overview">
+      <div class="box">
+        <h3>Bán được</h3>
+        <h1 class="count" data-count="132">132+</h1>
+        <h3>đôi giày</h3>
+      </div>
+      <div class="box">
+        <h3>Hợp tác với</h3>
+        <h1 class="count" data-count="15">15+</h1>
+        <h3>Brand</h3>
+      </div>
+
+      <div class="box">
+        <h3>Giao dịch với</h3>
+        <h1 class="count" data-count="1000">1000+</h1>
+        <h3>Khách hàng</h3>
+      </div>
+
+      <div class="box">
+        <h3>Đánh giá</h3>
+        <h1 class="count" data-count="4.5">4.5+</h1>
+        <h3><i class="fas fa-star"></i></h3>
+      </div>
+    </section>
+
+    <section class="service">
+      <h1 class="heading"><span>Dịch vụ của</span> chúng tôi</h1>
+      <div class="left-background"></div>
+      <div class="right-background"></div>
+      <div class="wrapper">
+        <div class="box">
+          <div class="image">
+            <img src="./images/SERVICE/FreeShipping.png" alt="" />
+          </div>
+          <div class="desc">
+            <h2>Miễn phí vận chuyển</h2>
+            <div class="line"></div>
+            <span>Miễn phí vận chuyển cho mọi đơn hàng</span>
+          </div>
+          <div class="number"><span>1</span></div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./images/SERVICE/Refund.png" alt="" />
+          </div>
+          <div class="desc">
+            <h2>Đảm bảo hoàn tiền</h2>
+            <div class="line"></div>
+            <span>Hoàn lại tiền trong 30 ngày</span>
+          </div>
+          <div class="number"><span>2</span></div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./images/SERVICE/Support.png" alt="" />
+          </div>
+          <div class="desc">
+            <h2>Hỗ trợ 24/7</h2>
+            <div class="line"></div>
+            <span>Hỗ trợ nhiệt tình mọi lúc</span>
+          </div>
+          <div class="number"><span>3</span></div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./images/SERVICE/Payment.png" alt="" />
+          </div>
+          <div class="desc">
+            <h2>Thanh toán an toàn</h2>
+            <div class="line"></div>
+            <span>Bảo mật thông tin</span>
+          </div>
+          <div class="number"><span>4</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="address">
+      <h1 class="heading">Địa chỉ của chúng tôi</h1>
+      <div class="wrapper">
+        <div class="map">
+          <iframe
+            width="100%"
+            height="100%"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20St12%20Nguy%E1%BB%85n%20V%C4%83n%20B%E1%BA%A3o,%20Ph%C6%B0%E1%BB%9Dng%204,%20Qu%E1%BA%ADn%20G%C3%B2%20V%E1%BA%A5p,%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh.reet,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ><a href="https://www.gps.ie/marine-gps/">navigation gps</a></iframe
+          >
+        </div>
+        <div class="desc">
+          <div class="box">
+            <h2><ion-icon name="home-outline"></ion-icon>Địa chỉ:</h2>
+            <span
+              >12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TP. Hồ Chí Minh</span
+            >
+          </div>
+          <div class="box">
+            <h2><ion-icon name="call-outline"></ion-icon>Điện thoại:</h2>
+            <span>0283.8940 390</span>
+          </div>
+          <div class="box">
+            <h2><ion-icon name="mail-outline"></ion-icon>Email:</h2>
+            <span>dhcn@iuh.edu.vn</span>
+          </div>
+        </div>
+      </div>
+      <div class="social-wrapper">
+        <div class="parent-box">
+          <div class="box">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <span>SneakerS</span>
+          </div>
+          <div class="box">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <span>SneakerS</span>
+          </div>
+        </div>
+        <div class="parent-box">
+          <div class="box">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <span>SneakerS</span>
+          </div>
+          <div class="box">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <span>SneakerS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="member-details">
+      <h1 class="heading">Thành viên nhóm</h1>
+      <div class="member-details_slider">
+        <div class="slider-items">
+          <div class="card">
+            <div class="left-of-card">
+              <div class="emojis">
+                <img src="./images/ABOUT_US/Emojis.png" alt="" />
+              </div>
+              <div class="avatar">
+                <img src="./images/ABOUT_US/Member_imgQuan.jpg" alt="" />
+              </div>
+              <div class="haft-circle"></div>
+            </div>
+            <div class="right-of-card">
+              <div class="role">
+                <i class="fas fa-code"></i>
+                <span>CODER</span>
+              </div>
+              <div class="content">
+                <h2>Đinh Trần Anh Quân</h2>
+                <div class="line"></div>
+                <span>20018481</span>
+                <ul>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <span>Code giao diện phần Home và Brands</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <span>Code sự kiện cho web</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <span>Code giao diện phần About Us</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <span>Code giao diện phần Contact</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <span>Fix bug</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="card">
+            <div class="left-of-card">
+              <div class="emojis">
+                <img src="./images/ABOUT_US/Emojis.png" alt="" />
+              </div>
+              <div class="avatar">
+                <img src="./images/ABOUT_US/Member_imgQuoc.jpg" alt="" />
+              </div>
+              <div class="haft-circle"></div>
+            </div>
+            <div class="right-of-card">
+              <div class="role">
+                <i class="fas fa-palette"></i>
+                <span>DESIGNER</span>
+              </div>
+              <div class="content">
+                <h2>Mã Hàn Quốc</h2>
+                <div class="line"></div>
+                <span>20007231</span>
+                <ul>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <span>Thiết kế giao diện phần Home</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <span>Thiết kế giao diện phần Contact</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <span>Test web và tìm bug</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="card">
+            <div class="left-of-card">
+              <div class="emojis">
+                <img src="./images/ABOUT_US/Emojis.png" alt="" />
+              </div>
+              <div class="avatar">
+                <img src="./images/ABOUT_US/Member_imgTruong.jpg" alt="" />
+              </div>
+              <div class="haft-circle"></div>
+            </div>
+            <div class="right-of-card">
+              <div class="role">
+                <i class="fas fa-palette"></i>
+                <span>DESIGNER</span>
+              </div>
+              <div class="content">
+                <h2>Nguyễn Phi Trường</h2>
+                <div class="line"></div>
+                <span>20015341</span>
+                <ul>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <span>Thiết kế giao diện phần About Us</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <span>Thiết kế giao diện phần Brands</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <span>Test Web và tìm bug</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================Bắt đầu phần Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="boxfoot">
+          <div class="social">
+            <h2>Theo dõi chúng tôi</h2>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <span> <ion-icon name="logo-facebook"></ion-icon></span>
+                Facebook
+              </li>
+              <li>
+                <span><ion-icon name="logo-instagram"></ion-icon></span>
+                Instagram
+              </li>
+              <li>
+                <span> <ion-icon name="logo-linkedin"></ion-icon></span> Linked
+                In
+              </li>
+              <li>
+                <span><ion-icon name="logo-twitter"></ion-icon></span> Twitter
+              </li>
+            </ul>
+          </div>
+
+          <div class="info">
+            <h2>Thông tin</h2>
+            <div class="line"></div>
+            <li>
+              <div class="wrapper">
+                <ion-icon name="home-outline"></ion-icon>
+                <span>Địa chỉ: </span>
+              </div>
+              <span
+                >12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TP. Hồ Chí Minh</span
+              >
+            </li>
+            <li>
+              <div class="wrapper">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>Điện thoại: </span>
+              </div>
+              <span>0283.8940.390</span>
+            </li>
+            <li>
+              <div class="wrapper">
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>Email: </span>
+              </div>
+              <span>dhcn@iuh.edu.vn</span>
+            </li>
+          </div>
+        </div>
+        <div class="boxfoot">
+          <div class="policy">
+            <h2>Nội dung chính sách</h2>
+            <div class="line"></div>
+            <ul>
+              <li>Chính sách bảo mật</li>
+              <li>Điều khoản dịch vụ</li>
+              <li>Chính sách thành viên</li>
+              <li>Chính sách đổi trả hàng</li>
+              <li>Chính sách thanh toán</li>
+              <li>Chính sách dành cho khách hàng</li>
+              <li>Chính sách bảo mật sản phẩm</li>
+            </ul>
+          </div>
+        </div>
+        <div class="boxfoot">
+          <div class="payment">
+            <h2>Cách thức thanh toán</h2>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <img src="./images/FOOTER/COD.png" alt="" />
+                <span>Tiền mặt</span>
+              </li>
+              <li>
+                <img src="./images/FOOTER/MOMO.png" alt="" />
+                <span>Momo</span>
+              </li>
+              <li>
+                <img src="./images/FOOTER/VISA.png" alt="" />
+                <span>VISA, MASTER, JCB</span>
+              </li>
+              <li>
+                <img src="./images/FOOTER/VISA.png" alt="" />
+                <span>Internet Banking</span>
+              </li>
+            </ul>
+          </div>
+          <div class="transport">
+            <h2>Đối tác vận chuyển</h2>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <img src="./images/FOOTER/GHN.png" alt="" />
+              </li>
+              <li>
+                <img src="./images/FOOTER/Grab.png" alt="" />
+              </li>
+              <li>
+                <img src="./images/FOOTER/AhaMove.png" alt="" />
+              </li>
+              <li>
+                <img src="./images/FOOTER/Viettelpost.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="boxfoot">
+          <div class="app">
+            <h2>Ứng dụng trên điện thoại</h2>
+            <div class="line"></div>
+            <ul>
+              <li><img src="./images/FOOTER/GooglePlay.png" alt="" /></li>
+              <li><img src="./images/FOOTER/AppStore.png" alt="" /></li>
+            </ul>
+          </div>
+          <div class="email">
+            <h2>Đăng ký nhận tin</h2>
+            <div class="line"></div>
+            <div class="input">
+              <input type="text" placeholder="Nhập email của bạn..." />
+              <div class="send">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-logo footer-logo">
+        <span>SN<i class="fa-solid fa-shoe-prints"></i>KERS</span>
+      </div>
+    </footer>
+    <script>
+      function loading() {
+        let loadingTem = `<div class="modal-loading">
+        <div class="sk-cube-grid">
+          <div class="sk-cube sk-cube1"></div>
+          <div class="sk-cube sk-cube2"></div>
+          <div class="sk-cube sk-cube3"></div>
+          <div class="sk-cube sk-cube4"></div>
+          <div class="sk-cube sk-cube5"></div>
+          <div class="sk-cube sk-cube6"></div>
+          <div class="sk-cube sk-cube7"></div>
+          <div class="sk-cube sk-cube8"></div>
+          <div class="sk-cube sk-cube9"></div>
+        </div>
+      </div>`;
+        document.body.insertAdjacentHTML("beforeend", loadingTem);
+        document.body.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          // Vì event của thẻ a, nên phải chạy window.open trước cho khỏi bị delay
+          setTimeout(function () {
+            document.querySelector(".modal-loading").remove();
+          }, 1500);
+          setTimeout(function () {
+            window.open(event.target.href, "_self");
+          }, 1450);
+        });
+      }
+    </script>
+    <!-- ===============================================================Kết thúc phần Footer -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./JS/slickslider.js"></script>
+    <script src="./JS/about_us.js"></script>
+    <script src="./JS/common.js" type="module"></script>
+    <!-- Font Ionic CDN Link  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- AOS CDN Link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Slick Slider CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </body>
+</html>

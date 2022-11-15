@@ -1,0 +1,392 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/FAVICON/favicon-32x32.png"
+    />
+    <!-- Font Awesome CDN Link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- AOS CDN Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./CSS/common.css" />
+    <link rel="stylesheet" href="./CSS/brands.css" />
+    <title>PUMA</title>
+  </head>
+
+  <body>
+    <!-- Phần Header -->
+    <header class="header">
+      <div class="header-logo">
+        <a href="./home.html"
+          ><span>SN<i class="fa-solid fa-shoe-prints"></i>KERS</span></a
+        >
+      </div>
+      <div class="header-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <div class="brands-dropdown">
+            <span>Brands</span>
+            <div class="brands-menu">
+              <a href="./nike.html" onclick="loading()">NIKE</a>
+              <a href="./jordan.html" onclick="loading()">AIR JORDAN</a>
+              <a href="./adidas.html" onclick="loading()">ADIDAS</a>
+              <a href="./puma.html" onclick="loading()">PUMA</a>
+              <a href="./MLB.html" onclick="loading()">MLB</a>
+            </div>
+          </div>
+          <li><a href="./about_us.html" onclick="loading()">About Us</a></li>
+          <li><a href="./contact.html" onclick="loading()">Contact</a></li>
+        </ul>
+      </div>
+      <div class="header-button">
+        <div class="sign-up"><h2>Đăng ký</h2></div>
+        <div class="log-in"><h2>Đăng nhập</h2></div>
+      </div>
+      <div id="menu-bar" class="fas fa-bars"></div>
+    </header>
+    <!-- Phần Content -->
+    <section class="content">
+      <div class="sidebar-left">
+        <h1>Brands / PUMA</h1>
+        <div class="search-box">
+          <input type="text" placeholder="Nhập tên sản phẩm..." />
+        </div>
+        <div class="filter-box">
+          <h2>Lọc theo:</h2>
+          <ul class="select-result">
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="remove-filter">Xoá tất cả</div>
+        </div>
+        <div class="filter-box">
+          <h2>Lọc theo giá:</h2>
+          <ul class="price">
+            <li>
+              <input
+                type="radio"
+                id="myCheck1"
+                name="price"
+                value="Giá trên 10.000.000 đ"
+              />
+              <label for="myCheck1"> Giá trên 10.000.000 đ</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="myCheck2"
+                name="price"
+                value="5.000.000 đ - 10.000.000 đ"
+              />
+              <label for="myCheck2"> 5.000.000 đ - 10.000.000 đ</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="myCheck3"
+                name="price"
+                value="2.000.000 đ - 5.000.000 đ"
+              />
+              <label for="myCheck3"> 2.000.000 đ - 5.000.000 đ</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="myCheck4"
+                name="price"
+                value="Giá dưới 2.000.000 đ"
+              />
+              <label for="myCheck4"> Giá dưới 2.000.000 đ</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter-box">
+          <h2>Lọc theo size:</h2>
+          <ul class="size">
+            <li>
+              <input type="radio" id="sizeCheck1" name="size" value="35" />
+              <label for="sizeCheck1"> 35</label>
+            </li>
+            <li>
+              <input type="radio" id="sizeCheck2" name="size" value="35.5" />
+              <label for="sizeCheck2"> 35.5</label>
+            </li>
+            <li>
+              <input type="radio" id="sizeCheck3" name="size" value="36" />
+              <label for="sizeCheck3"> 36</label>
+            </li>
+            <li>
+              <input type="radio" id="sizeCheck4" name="size" value="36.5" />
+              <label for="sizeCheck4"> 36.5</label>
+            </li>
+            <li>
+              <input type="radio" id="sizeCheck5" name="size" value="37" />
+              <label for="sizeCheck5"> 37</label>
+            </li>
+            <li>
+              <input type="radio" id="sizeCheck6" name="size" value="37.5" />
+              <label for="sizeCheck6"> 37.5</label>
+            </li>
+            <li>
+              <input type="radio" id="sizeCheck7" name="size" value="38" />
+              <label for="sizeCheck7"> 38</label>
+            </li>
+            <li>
+              <input type="radio" id="sizeCheck8" name="size" value="38.5" />
+              <label for="sizeCheck8"> 38.5</label>
+            </li>
+            <li>
+              <input type="radio" id="sizeCheck9" name="size" value="39" />
+              <label for="sizeCheck9"> 39</label>
+            </li>
+            <li>
+              <input type="radio" id="sizeCheck10" name="size" value="40" />
+              <label for="sizeCheck10"> 40</label>
+            </li>
+            <li>
+              <input type="radio" id="sizeCheck11" name="size" value="41" />
+              <label for="sizeCheck11"> 41</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="switch_tabs">
+          <button class="prev">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <button class="next">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="sort">
+          <h2>Sắp xếp theo:</h2>
+          <select>
+            <option value="Mới nhất">Mới nhất</option>
+            <option value="Tên từ A - Z">Tên từ A - Z</option>
+            <option value="Tên từ Z - A">Tên từ Z - A</option>
+            <option value="Giá tăng dần">Giá tăng dần</option>
+            <option value="Giá giảm dần">Giá giảm dần</option>
+          </select>
+        </div>
+        <div class="tab1"></div>
+        <div class="tab2"></div>
+      </div>
+    </section>
+    <!-- Phần sidebar bên phải -->
+    <div
+      class="sidebar sidebar-rights"
+      data-aos="zoom-in-left"
+      data-aos-duration="1000"
+    >
+      <div class="boxicon sidebar-cart">
+        <a href="./cart.html" onclick="loading()"
+          ><ion-icon name="cart-outline"></ion-icon
+        ></a>
+      </div>
+      <div class="boxicon sidebar-notification">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </div>
+      <div class="boxicon sidebar-chatbox">
+        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+      </div>
+    </div>
+    <!-- Phần Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="boxfoot">
+          <div class="social">
+            <h2>Theo dõi chúng tôi</h2>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <span> <ion-icon name="logo-facebook"></ion-icon></span>
+                Facebook
+              </li>
+              <li>
+                <span><ion-icon name="logo-instagram"></ion-icon></span>
+                Instagram
+              </li>
+              <li>
+                <span> <ion-icon name="logo-linkedin"></ion-icon></span> Linked
+                In
+              </li>
+              <li>
+                <span><ion-icon name="logo-twitter"></ion-icon></span> Twitter
+              </li>
+            </ul>
+          </div>
+
+          <div class="info">
+            <h2>Thông tin</h2>
+            <div class="line"></div>
+            <li>
+              <div class="wrapper">
+                <ion-icon name="home-outline"></ion-icon>
+                <span>Địa chỉ: </span>
+              </div>
+              <span
+                >12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TP. Hồ Chí Minh</span
+              >
+            </li>
+            <li>
+              <div class="wrapper">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>Điện thoại: </span>
+              </div>
+              <span>0283.8940.390</span>
+            </li>
+            <li>
+              <div class="wrapper">
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>Email: </span>
+              </div>
+              <span>dhcn@iuh.edu.vn</span>
+            </li>
+          </div>
+        </div>
+        <div class="boxfoot">
+          <div class="policy">
+            <h2>Nội dung chính sách</h2>
+            <div class="line"></div>
+            <ul>
+              <li>Chính sách bảo mật</li>
+              <li>Điều khoản dịch vụ</li>
+              <li>Chính sách thành viên</li>
+              <li>Chính sách đổi trả hàng</li>
+              <li>Chính sách thanh toán</li>
+              <li>Chính sách dành cho khách hàng</li>
+              <li>Chính sách bảo mật sản phẩm</li>
+            </ul>
+          </div>
+        </div>
+        <div class="boxfoot">
+          <div class="payment">
+            <h2>Cách thức thanh toán</h2>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <img src="./images/FOOTER/COD.png" alt="" />
+                <span>Tiền mặt</span>
+              </li>
+              <li>
+                <img src="./images/FOOTER/MOMO.png" alt="" />
+                <span>Momo</span>
+              </li>
+              <li>
+                <img src="./images/FOOTER/VISA.png" alt="" />
+                <span>VISA, MASTER, JCB</span>
+              </li>
+              <li>
+                <img src="./images/FOOTER/VISA.png" alt="" />
+                <span>Internet Banking</span>
+              </li>
+            </ul>
+          </div>
+          <div class="transport">
+            <h2>Đối tác vận chuyển</h2>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <img src="./images/FOOTER/GHN.png" alt="" />
+              </li>
+              <li>
+                <img src="./images/FOOTER/Grab.png" alt="" />
+              </li>
+              <li>
+                <img src="./images/FOOTER/AhaMove.png" alt="" />
+              </li>
+              <li>
+                <img src="./images/FOOTER/Viettelpost.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="boxfoot">
+          <div class="app">
+            <h2>Ứng dụng trên điện thoại</h2>
+            <div class="line"></div>
+            <ul>
+              <li><img src="./images/FOOTER/GooglePlay.png" alt="" /></li>
+              <li><img src="./images/FOOTER/AppStore.png" alt="" /></li>
+            </ul>
+          </div>
+          <div class="email">
+            <h2>Đăng ký nhận tin</h2>
+            <div class="line"></div>
+            <div class="input">
+              <input type="text" placeholder="Nhập email của bạn..." />
+              <div class="send">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-logo footer-logo">
+        <span>SN<i class="fa-solid fa-shoe-prints"></i>KERS</span>
+      </div>
+    </footer>
+    <script>
+      function loading() {
+        let loadingTem = `<div class="modal-loading">
+        <div class="sk-cube-grid">
+          <div class="sk-cube sk-cube1"></div>
+          <div class="sk-cube sk-cube2"></div>
+          <div class="sk-cube sk-cube3"></div>
+          <div class="sk-cube sk-cube4"></div>
+          <div class="sk-cube sk-cube5"></div>
+          <div class="sk-cube sk-cube6"></div>
+          <div class="sk-cube sk-cube7"></div>
+          <div class="sk-cube sk-cube8"></div>
+          <div class="sk-cube sk-cube9"></div>
+        </div>
+      </div>`;
+        document.body.insertAdjacentHTML("beforeend", loadingTem);
+        document.body.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          // Vì event của thẻ a, nên phải chạy window.open trước cho khỏi bị delay
+          setTimeout(function () {
+            document.querySelector(".modal-loading").remove();
+          }, 1500);
+          setTimeout(function () {
+            window.open(event.target.href, "_self");
+          }, 1450);
+        });
+      }
+    </script>
+    <!-- Jquery CDN -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+
+    <!-- Font Ionic CDN Link  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- AOS CDN Link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="./JS/puma.js" type="module"></script>
+    <script src="./JS/common.js" type="module"></script>
+  </body>
+</html>

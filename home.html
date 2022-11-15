@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/FAVICON/favicon-32x32.png"
+    />
+    <!-- Font Awesome CDN Link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- AOS CDN Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Slick Slider CDN Link -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- Swipper Slider CND Link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- style.css Link -->
+    <link rel="stylesheet" href="./CSS/common.css" />
+    <link rel="stylesheet" href="./CSS/home.css" />
+    <title>SNEAKERS</title>
+  </head>
+
+  <body>
+    <!-- Background -->
+    <div id="particles-js"></div>
+    <!-- Custom con trỏ -->
+    <div class="cursor"></div>
+    <!-- Phần Header -->
+    <header class="header">
+      <div class="header-logo">
+        <a href="./home.html"
+          ><span>SN<i class="fa-solid fa-shoe-prints"></i>KERS</span></a
+        >
+      </div>
+      <div class="header-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <div class="brands-dropdown">
+            <span>Brands</span>
+            <div class="brands-menu">
+              <a href="./nike.html" onclick="loading()">NIKE</a>
+              <a href="./jordan.html" onclick="loading()">AIR JORDAN</a>
+              <a href="./adidas.html" onclick="loading()">ADIDAS</a>
+              <a href="./puma.html" onclick="loading()">PUMA</a>
+              <a href="./MLB.html" onclick="loading()">MLB</a>
+            </div>
+          </div>
+          <li><a href="./about_us.html" onclick="loading()">About Us</a></li>
+          <li><a href="./contact.html" onclick="loading()">Contact</a></li>
+        </ul>
+      </div>
+      <div class="header-button">
+        <div class="sign-up"><h2>Đăng ký</h2></div>
+        <div class="log-in"><h2>Đăng nhập</h2></div>
+      </div>
+      <div id="menu-bar" class="fas fa-bars"></div>
+    </header>
+    <!-- Phần sidebar bên phải -->
+    <div class="sidebar sidebar-rights" data-aos="zoom-in-left" data-aos-duration="1000">
+      <div class="boxicon sidebar-cart">
+        <a href="./cart.html" onclick="loading()"><ion-icon name="cart-outline"></ion-icon></a>
+      </div>
+      <div class="boxicon sidebar-notification">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </div>
+      <div class="boxicon sidebar-chatbox">
+        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+      </div>
+    </div>
+     <!-- Phần sidebar bên trái -->
+    <div class="sidebar sidebar-lefts">
+      <div class="boxicon light-button">
+        <ion-icon name="sunny-outline"></ion-icon>
+      </div>
+      <div class="boxicon dark-button">
+        <ion-icon name="moon-outline"></ion-icon>
+      </div>
+    </div>
+    <!-- Phần Hero -->
+    <section class="hero">
+      <div class="hero-slogan">
+        <h1 data-aos="fade-down" data-aos-duration="1000">
+          Giao hàng <span>tận tay</span><br /><span>mua ngay </span>giá rẻ
+        </h1>
+        <p data-aos="fade-right" data-aos-duration="1000">
+          Thoải mái mua sắm cùng SneakerS với ưu đãi cực hấp dẫn.<br />
+          SneakerS nâng niu đôi chân bạn.
+        </p>
+        <div class="button" data-aos="fade-up" data-aos-duration="1000">
+          <a class="buy" href="./cart.html" onclick="loading()">
+            <ion-icon name="cart-outline" onclick="loading()"></ion-icon>Mua
+            ngay</a
+          >
+          <a class="shopping" href="./nike.html" onclick="loading()">
+            Start Shopping<ion-icon
+              name="arrow-forward-circle-outline"
+            ></ion-icon
+          ></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img
+          src="./images/HOME/HeroImage.png"
+          alt=""
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        />
+      </div>
+    </section>
+    <!-- Phần label -->
+    <section class="label">
+      <div class="label-container">
+        <div class="label-box">
+          <img src="./images/BRANDS/Adidas.png" alt="" />
+        </div>
+        <div class="label-box">
+          <img src="./images/BRANDS/Newton.png" alt="" />
+        </div>
+        <div class="label-box">
+          <img src="./images/BRANDS/Nike.png" alt="" />
+        </div>
+        <div class="label-box">
+          <img src="./images/BRANDS/Puma.png" alt="" />
+        </div>
+        <div class="label-box">
+          <img src="./images/BRANDS/SKECHERS.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Phần Banner -->
+    <section class="image">
+      <img src="./images/HOME/Background1.png" alt="" />
+      <div class="opacity"></div>
+      <div class="desc">
+        <h1>HOKA MACH 4</h1>
+        <p>
+          Được lấy cảm hứng bởi Rocket X và Carbon X. Nhắm tới những runner đang
+          tìm kiếm cho mình một đôi giày chạy đường dài mà vẫn giữ cho mình cảm
+          giác tràn đầy năng lượng xuyên suốt chặng đường.
+        </p>
+        <div class="discover">Khám phá ngay</div>
+      </div>
+    </section>
+    <!-- Phần Service -->
+    <section class="service">
+      <h1 class="heading">Dịch vụ của chúng tôi</h1>
+      <div class="container">
+        <div class="box" data-aos="fade-right" data-aos-duration="1000">
+          <div class="image">
+            <img src="./images/SERVICE/FreeShipping.png" alt="" />
+          </div>
+          <div class="desc">
+            <h2><span>1</span>Miễn phí vận chuyển</h2>
+            <span>Miễn phí vận chuyển cho mọi đơn hàng</span>
+          </div>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-duration="1000">
+          <div class="image">
+            <img src="./images/SERVICE/Refund.png" alt="" />
+          </div>
+          <div class="desc">
+            <h2><span>2</span>Đảm bảo hoàn tiền</h2>
+            <span>Hoàn lại tiền trong 30 ngày</span>
+          </div>
+        </div>
+        <div class="box" data-aos="fade-down" data-aos-duration="1000">
+          <div class="image">
+            <img src="./images/SERVICE/Support.png" alt="" />
+          </div>
+          <div class="desc">
+            <h2><span>3</span>Hỗ trợ 24/7</h2>
+            <span>Hỗ trợ nhiệt tình mọi lúc</span>
+          </div>
+        </div>
+        <div class="box" data-aos="fade-left" data-aos-duration="1000">
+          <div class="image">
+            <img src="./images/SERVICE/Payment.png" alt="" />
+          </div>
+          <div class="desc">
+            <h2><span>4</span>Thanh toán an toàn</h2>
+            <span>Bảo mật thông tin</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Phần Feature -->
+    <section class="feature">
+      <h1 class="heading">Sản phẩm nổi trội</h1>
+      <div class="feature-slider">
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/NIKE/Nike3_1.png"/>
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">COURT VISION LOW TRIPLE WHITE</h2>
+                <h3 class="brandName">NIKE</h3>
+                <div class="price">
+                  <h2 class="new-price">1.900.000 VND</h2>
+                  <h3 class="old-price">2.071.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/PUMA/Puma3_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">PUMA THUNDER 4 LIFE</h2>
+                <h3 class="brandName">PUMA</h3>
+                <div class="price">
+                  <h2 class="new-price">3.300.000 VND</h2>
+                  <h3 class="old-price">3.960.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/JORDAN/Jordan2_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">AIR JORDAN 1 ELEVATE LOW ONYX</h2>
+                <h3 class="brandName">AIR JORDAN</h3>
+                <div class="price">
+                  <h2 class="new-price">4.800.000 VND</h2>
+                  <h3 class="old-price">5.520.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/JORDAN/Jordan10_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" >
+                  AIR JORDAN 5 LOW FIRE RED</h2>
+                <h3 class="brandName">AIR JORDAN</h3>
+                <div class="price">
+                  <h2 class="new-price">4.900.000 VND</h2>
+                  <h3 class="old-price">5.537.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 >Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png"  />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" >ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 >Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png"  />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" >ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 >Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png"  />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" >ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 >Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png"  />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" >ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 >Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png"  />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" >ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 >Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png"  />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" >ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 >Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png"  />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" >ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 >Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Phần Newest -->
+    <section class="newest">
+      <h1 class="heading">Sản phẩm mới nhất</h1>
+      <div class="newest-slider">
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" >
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items">
+          <div class="box" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card-image">
+              <div class="tags">
+                <div class="new">New</div>
+                <div class="discount">-10%</div>
+              </div>
+              <img src="./images/ADIDAS/Adidas1_1.png" data-num="1" />
+            </div>
+            <div class="card-details">
+              <div class="details-unhidden">
+                <h2 class="name" data-num="1">ADIDAS YEEZY 350 V2 CINDER</h2>
+                <h3 class="brandName">ADIDAS</h3>
+                <div class="price">
+                  <h2 class="new-price">8.500.000 VND</h2>
+                  <h3 class="old-price">9.500.000 VND</h3>
+                </div>
+              </div>
+              <div class="details-hidden">
+                <div class="addcart">
+                  <h3 data-num="1">Thêm vào giỏ hàng</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Phần Sale off -->
+    <section class="sale-off">
+      <div class="opacity"></div>
+      <div class="container">
+        <h1>KHUYẾN MÃI <span>LÊN ĐẾN 43%</span></h1>
+        <div class="shop-now"><span>Shop Now</span></div>
+        <h2>Thời gian kết thúc ưu đãi</h1>
+        <ul>
+          <li>
+            <div class="box">
+              <span id="days">05</span>
+            </div>
+            <h3>NGÀY</h3>
+          </li>
+          <div class="double-dot">:</div>
+          <li>
+            <div class="box">
+              <span id="hours">23</span>
+            </div>
+            <h3>GIỜ</h3>
+          </li>
+          <div class="double-dot">:</div>
+          <li>
+            <div class="box">
+              <span id="minutes">16</span>
+            </div>
+            <h3>PHÚT</h3>
+          </li>
+          <div class="double-dot">:</div>
+          <li>
+            <div class="box">
+              <span id="seconds">07</span>
+            </div>
+            <h3>GIÂY</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Phần Review -->
+    <section class="review">
+      <h1 class="heading">Đánh giá từ khách hàng</h1>
+      <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+           <div class="swiper-slide slide" data-name="food-1">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="./images/HOME/Cus1.jpg" alt="" />
+              <h3>Jiso</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="comment">
+                Giày đẹp chuẩn, full box bill đầy đủ hết ạ hộp không bị méo gì hết.
+                Shop tư vấn cục kì nhiệt tình giao hàng nhanh.
+                Công nhận shop có tâm.
+              </div>
+            </div>
+           </div>
+           <div class="swiper-slide slide" data-name="food-2">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="./images/HOME/Cus2.jpg" alt="" />
+              <h3>Lisa</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="comment">
+                Ôi tôi thề sẽ ủng hộ shop mãi luôn. Lần đầu dặt hàng shoppe mà thấy ưng thế này đã nhận hàng, đóng gói chắc chắn. 
+              </div>
+            </div>
+           </div>
+           <div class="swiper-slide slide" data-name="food-3">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="./images/HOME/Cus3.jpg" alt="" />
+              <h3>Rosé</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="comment">
+                Giao hàng nhanh và đóng gói rất cẩn thận, đầy đủ, giày đẹp, form cứng cáp lắm nha, đi rất êm chân, shop tư vấn nhiệt tình, giao hàng siêu nhanh. 
+              </div>
+            </div>
+           </div>
+           <div class="swiper-slide slide" data-name="food-4">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="./images/HOME/Cus4.jpg" alt="" />
+              <h3>Jennie</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="comment">
+                Giao hàng nhanh, đóng gói sản phẩm chắc chắn, so với giá tiền thì hàng này ok rồi.
+              </div>
+            </div>
+           </div>
+           <div class="swiper-slide slide" data-name="food-5">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="./images/HOME/Cus7.jpg" alt="" />
+              <h3>Chi Den</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="comment">
+                Hàng đẹp lắm luôn đấy ạ, lúc đầu đặt tưởng không đẹp, ko vừa chân. Đến lúc nhận được hàng thì trên sức tưởng tượng.
+              </div>
+            </div>
+           </div>
+           <div class="swiper-slide slide" data-name="food-5">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="./images/HOME/Cus5.jpg" alt="" />
+              <h3>Anh Den</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="comment">
+                Sản phẩm rất đa dạng, nhiều mẫu mã. Nói chung tui ủng hộ shop này!
+              </div>
+            </div>
+           </div>
+           <div class="swiper-slide slide" data-name="food-5">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="./images/HOME/Cus6.jpg" alt="" />
+              <h3>Chi Gia</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="comment">
+                Hàng đẹp, đi lên form đẹp lắm, sẽ mua ủng hộ shop nhiều.
+              </div>
+            </div>
+           </div>
+        </div>
+     </div>
+    
+    </section>
+    <!-- Phần Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="opacity"></div>
+        <div class="wrapper">
+          <div class="left-wrapper">
+            <h1 class="heading">Đăng ký nhận bản tin</h1>
+            <p>
+              Cập nhật các mẫu giày mới nhất hàng tuần, các khung giờ giảm giá
+              và nhận nhiều ưu đãi khác.
+            </p>
+          </div>
+          <div class="right-wrapper">
+            <div class="input">
+              <input type="email" placeholder="Nhập email của bạn..." />
+              <button>Đăng ký</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Phần Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="boxfoot">
+          <div class="social">
+            <h2>Theo dõi chúng tôi</h2>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <span> <ion-icon name="logo-facebook"></ion-icon></span>
+                Facebook
+              </li>
+              <li>
+                <span><ion-icon name="logo-instagram"></ion-icon></span>
+                Instagram
+              </li>
+              <li>
+                <span> <ion-icon name="logo-linkedin"></ion-icon></span> Linked
+                In
+              </li>
+              <li>
+                <span><ion-icon name="logo-twitter"></ion-icon></span> Twitter
+              </li>
+            </ul>
+          </div>
+
+          <div class="info">
+            <h2>Thông tin</h2>
+            <div class="line"></div>
+            <li>
+              <div class="wrapper">
+                <ion-icon name="home-outline"></ion-icon>
+                <span>Địa chỉ: </span>
+              </div>
+              <span
+                >12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TP. Hồ Chí Minh</span
+              >
+            </li>
+            <li>
+              <div class="wrapper">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>Điện thoại: </span>
+              </div>
+              <span>0283.8940.390</span>
+            </li>
+            <li>
+              <div class="wrapper">
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>Email: </span>
+              </div>
+              <span>dhcn@iuh.edu.vn</span>
+            </li>
+          </div>
+        </div>
+        <div class="boxfoot">
+          <div class="policy">
+            <h2>Nội dung chính sách</h2>
+            <div class="line"></div>
+            <ul>
+              <li>Chính sách bảo mật</li>
+              <li>Điều khoản dịch vụ</li>
+              <li>Chính sách thành viên</li>
+              <li>Chính sách đổi trả hàng</li>
+              <li>Chính sách thanh toán</li>
+              <li>Chính sách dành cho khách hàng</li>
+              <li>Chính sách bảo mật sản phẩm</li>
+            </ul>
+          </div>
+        </div>
+        <div class="boxfoot">
+          <div class="payment">
+            <h2>Cách thức thanh toán</h2>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <img src="./images/FOOTER/COD.png" alt="" />
+                <span>Tiền mặt</span>
+              </li>
+              <li>
+                <img src="./images/FOOTER/MOMO.png" alt="" />
+                <span>Momo</span>
+              </li>
+              <li>
+                <img src="./images/FOOTER/VISA.png" alt="" />
+                <span>VISA, MASTER, JCB</span>
+              </li>
+              <li>
+                <img src="./images/FOOTER/VISA.png" alt="" />
+                <span>Internet Banking</span>
+              </li>
+            </ul>
+          </div>
+          <div class="transport">
+            <h2>Đối tác vận chuyển</h2>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <img src="./images/FOOTER/GHN.png" alt="" />
+              </li>
+              <li>
+                <img src="./images/FOOTER/Grab.png" alt="" />
+              </li>
+              <li>
+                <img src="./images/FOOTER/AhaMove.png" alt="" />
+              </li>
+              <li>
+                <img src="./images/FOOTER/Viettelpost.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="boxfoot">
+          <div class="app">
+            <h2>Ứng dụng trên điện thoại</h2>
+            <div class="line"></div>
+            <ul>
+              <li><img src="./images/FOOTER/GooglePlay.png" alt="" /></li>
+              <li><img src="./images/FOOTER/AppStore.png" alt="" /></li>
+            </ul>
+          </div>
+          <div class="email">
+            <h2>Đăng ký nhận tin</h2>
+            <div class="line"></div>
+            <div class="input">
+              <input type="text" placeholder="Nhập email của bạn..." />
+              <div class="send">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-logo footer-logo">
+        <span>SN<i class="fa-solid fa-shoe-prints"></i>KERS</span>
+      </div>
+    </footer>
+    <script>
+      function loading() {
+        let loadingTem = `<div class="modal-loading">
+        <div class="sk-cube-grid">
+          <div class="sk-cube sk-cube1"></div>
+          <div class="sk-cube sk-cube2"></div>
+          <div class="sk-cube sk-cube3"></div>
+          <div class="sk-cube sk-cube4"></div>
+          <div class="sk-cube sk-cube5"></div>
+          <div class="sk-cube sk-cube6"></div>
+          <div class="sk-cube sk-cube7"></div>
+          <div class="sk-cube sk-cube8"></div>
+          <div class="sk-cube sk-cube9"></div>
+        </div>
+      </div>`;
+        document.body.insertAdjacentHTML("beforeend", loadingTem);
+        document.body.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          // Vì event của thẻ a, nên phải chạy window.open trước cho khỏi bị delay
+          setTimeout(function () {
+            document.querySelector(".modal-loading").remove();
+          }, 1500);
+          setTimeout(function () {
+            window.open(event.target.href, "_self");
+          }, 1450);
+        });
+      }
+    </script>
+    <!-- Font Ionic CDN Link  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- AOS CDN Link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Jquery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./JS/countdown.js"></script>
+    
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <!-- Slick Slider CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    
+    <!-- Swiper Slider CDN Link -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="./JS/common.js" type="module"></script>
+    <script src="./JS/home.js" type="module"></script>
+    <script src="./JS/particles.js"></script>
+    <script src="./JS/particlesScript.js"></script>
+    <script src="./JS/slickslider.js"></script>
+    <script src="./JS/swipperslider.js"></script>
+  </body>
+</html>
